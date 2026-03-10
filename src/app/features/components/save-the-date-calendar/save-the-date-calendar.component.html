@@ -1,0 +1,27 @@
+<section class="std">
+    <div class="paper">
+        <div class="title">{{ title }}</div>
+
+        <div class="weekdays">
+            <div class="wd" *ngFor="let w of weekdays">{{ w }}</div>
+        </div>
+
+        <div class="grid">
+            <div class="cell" *ngFor="let c of cells" [class.target]="c.isTarget">
+                <span class="day" *ngIf="c.day">{{ c.day }}</span>
+
+                <svg *ngIf="c.isTarget" class="heart" viewBox="0 0 64 64" aria-hidden="true">
+                    <path
+                        d="M32 54s-18-10.6-24.3-22C3.6 23.7 7.8 14 18 14c6 0 10.2 3.4 14 8 3.8-4.6 8-8 14-8 10.2 0 14.4 9.7 10.3 18C50 43.4 32 54 32 54z"
+                        fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="month-row">
+            <div class="month">{{ monthLabel }}</div>
+            <div class="year">{{ yearLabel }}</div>
+        </div>
+    </div>
+</section>

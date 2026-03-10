@@ -1,0 +1,76 @@
+.music-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.music-button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    color: #333333;
+    background: #f0f0f0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: float 3s ease-in-out infinite;
+}
+
+.music-button::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: rgba(51, 51, 51, 0.1);
+    transform: rotate(45deg);
+    top: -100%;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.music-button:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.music-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.rotate {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .music-button {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+}

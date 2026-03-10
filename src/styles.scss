@@ -1,0 +1,219 @@
+// ==========================================
+// VARIABLES DE COLOR - TEMA DE LUJO
+// ==========================================
+$primary-dark: #0a0a0a;
+$secondary-dark: #1a1a1a;
+$accent-gold: #d4af37;
+$accent-gold-light: #e8c547;
+$text-light: #ffffff;
+$text-muted: rgba(255, 255, 255, 0.7);
+$border-color: rgba(255, 255, 255, 0.08);
+
+// ==========================================
+// RESET Y CONFIGURACIÓN GLOBAL
+// ==========================================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff5f5 0%, #fef2f2 50%, #fdf2f8 100%);
+  color: $text-light;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+// ==========================================
+// TIPOGRAFÍA
+// ==========================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  color: $text-muted;
+}
+
+// ==========================================
+// UTILIDADES
+// ==========================================
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// Botones
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  text-align: center;
+
+  &.primary {
+    background: linear-gradient(135deg, $accent-gold, $accent-gold-light);
+    color: #000;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba($accent-gold, 0.3);
+    }
+  }
+
+  &.secondary {
+    background: $secondary-dark;
+    color: $text-light;
+    border: 2px solid $accent-gold;
+
+    &:hover {
+      background: $accent-gold;
+      color: #000;
+      transform: translateY(-2px);
+    }
+  }
+
+  &.ghost {
+    background: transparent;
+    color: $accent-gold;
+    border: 2px solid $accent-gold;
+
+    &:hover {
+      background: $accent-gold;
+      color: #000;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Secciones
+section {
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 0;
+  }
+}
+
+// ==========================================
+// GRADIENTES Y EFECTOS
+// ==========================================
+.gradient-text {
+  background: linear-gradient(135deg, $accent-gold, $accent-gold-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+// ==========================================
+// SCROLLBAR PERSONALIZADO
+// ==========================================
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $secondary-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent-gold;
+  border-radius: 4px;
+
+  &:hover {
+    background: $accent-gold-light;
+  }
+}
+
+// ==========================================
+// SELECCIÓN DE TEXTO
+// ==========================================
+::selection {
+  background: $accent-gold;
+  color: #000;
+}
+
+::-moz-selection {
+  background: $accent-gold;
+  color: #000;
+}
+
+.reveal-init {
+  opacity: 0;
+  transform: translateY(22px);
+  filter: blur(4px);
+  transition:
+    opacity 850ms cubic-bezier(.2, .8, .2, 1),
+    transform 850ms cubic-bezier(.2, .8, .2, 1),
+    filter 850ms cubic-bezier(.2, .8, .2, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init {
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+}

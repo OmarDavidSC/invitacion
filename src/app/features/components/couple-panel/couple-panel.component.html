@@ -1,0 +1,75 @@
+<section class="panel" [class.confetti]="showConfetti">
+    <div class="paper">
+
+        <!-- Flores superiores separadas -->
+        <img class="flower-top-left" [src]="flowerTopLeftUrl" alt="">
+        <img class="flower-top-right" [src]="flowerTopRightUrl" alt="">
+
+        <!-- Flor inferior izquierda -->
+        <img class="floral-bottom-left" [src]="floralBottomLeftUrl" alt="">
+
+        <div class="gold-confetti" aria-hidden="true"></div>
+
+        <div class="header">
+            <div class="left">
+                <div class="names">
+                    <div class="big">{{ brideName }}</div>
+                    <div class="and">&</div>
+                    <div class="big">{{ groomName }}</div>
+                </div>
+
+                <div class="rings">
+                    <img [src]="ringsImageUrl" alt="Anillos">
+                </div>
+
+                <p class="blessing">
+                    {{ blessingText }}
+                </p>
+            </div>
+
+            <div class="right">
+                <img class="couple" [src]="coupleImageUrl" alt="Novios">
+            </div>
+        </div>
+
+        <div class="parents">
+            <div class="parents-intro">{{ parentsIntro }}</div>
+
+            <div class="parents-grid">
+                <div class="col">
+                    <div class="ptitle">PADRES DEL NOVIO</div>
+                    <div class="pname" *ngFor="let p of brideParents">{{ p }}</div>
+                </div>
+
+                <div class="col">
+                    <div class="ptitle">PADRES DE LA NOVIA</div>
+                    <div class="pname" *ngFor="let p of groomParents">{{ p }}</div>
+                </div>
+            </div>
+
+            <div class="honor">tenemos el honor de invitarlo a nuestra boda</div>
+        </div>
+
+        <div class="date-strip">
+            <div class="month">{{ monthShort }}</div>
+
+            <div class="strip-row">
+                <div class="strip-side">
+                    <div class="strip-line"></div>
+                    <div class="strip-cap">{{ weekdayName }}</div>
+                    <div class="strip-line"></div>
+                </div>
+
+                <div class="strip-day">{{ dayNumber }}</div>
+
+                <div class="strip-side">
+                    <div class="strip-line"></div>
+                    <div class="strip-cap">{{ yearNumber }}</div>
+                    <div class="strip-line"></div>
+                </div>
+            </div>
+
+            <!-- <div class="year">{{  }}</div> -->
+        </div>
+    </div>
+</section>

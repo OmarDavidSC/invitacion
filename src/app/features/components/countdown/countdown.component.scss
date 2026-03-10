@@ -1,0 +1,105 @@
+.countdown {
+    padding: 26px 16px 18px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(47, 42, 42, 0.72);
+}
+
+.timer {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num {
+    // font-family: "Playfair Display", "Cormorant Garamond", serif;
+    font-size: clamp(30px, 7vw, 56px);
+    font-weight: 600;
+    line-height: 0.95;
+    color: #b97c85;
+    min-width: 2ch;
+    text-align: center;
+}
+
+.label {
+    margin-top: 6px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(10px, 2.4vw, 14px);
+    color: rgba(47, 42, 42, 0.68);
+}
+
+.colon {
+    font-size: clamp(20px, 7vw, 46px);
+    opacity: 0.55;
+    transform: translateY(-2px);
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .countdown {
+        padding: 22px 14px 16px;
+    }
+
+    .numbers {
+        gap: 4px;
+        font-size: clamp(28px, 7vw, 46px);
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 480px) {
+    .countdown {
+        padding: 20px 10px 14px;
+    }
+
+    .title {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .numbers {
+        margin-top: 10px;
+        gap: 2px;
+        font-size: clamp(24px, 9vw, 38px);
+        letter-spacing: 0;
+    }
+
+    .num {
+        min-width: 1.9ch;
+    }
+
+    .colon {
+        margin: 0;
+    }
+
+    .labels {
+        margin-top: 8px;
+        font-size: clamp(9px, 3vw, 12px);
+    }
+}
+
+/* MÓVIL MUY PEQUEÑO */
+@media (max-width: 360px) {
+    .numbers {
+        font-size: clamp(21px, 8.5vw, 32px);
+    }
+
+    .labels {
+        font-size: 9px;
+    }
+}

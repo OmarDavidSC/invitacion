@@ -1,0 +1,59 @@
+<app-loading-screen *ngIf="isLoading && data"
+    [coupleTitle]="data.couple.displayNames || (data.couple.groom + ' & ' + data.couple.bride)"
+    [subtitle]="'Te invitan a celebrar su boda'" [isClosing]="isClosingLoading"
+    (open)="closeLoading()"></app-loading-screen>
+
+<div class="page" *ngIf="data">
+    <main class="card">
+        <app-hero-cover appRevealOnScroll [quote]="data.hero.quote"
+            [names]="data.couple.displayNames || (data.couple.groom + ' & ' + data.couple.bride)"
+            [monogram]="data.couple.monogram || ''" [coverImageUrl]="data.hero.coverImageUrl">
+        </app-hero-cover>
+
+        <app-music-player *ngIf="data.music?.audioUrl"
+            [label]="data.blessing?.playLabel || 'DALE PLAY A NUESTRA CANCIÓN'" [title]="data.music?.title || ''"
+            [audioUrl]="data.music?.audioUrl || ''"></app-music-player>
+
+        <app-floral-separator appRevealOnScroll [flowerUrl]="'assets/img/separator-flower.png'">
+        </app-floral-separator>
+
+        <app-couple-panel appRevealOnScroll [topLine]="'CON NUESTRO AMOR, LA BENDICIÓN DE DIOS'"
+            [secondLine]="'Y LA DE NUESTROS PADRES'" [brideName]="data.couple.bride" [groomName]="data.couple.groom"
+            [inviteLine]="'TE INVITAMOS A CELEBRAR NUESTRA BODA'" [dateISO]="data.event.dateISO"
+            [parentsIntro]="data.parents?.intro || 'ASÍ QUE CON LA BENDICIÓN DE JEHOVÁ Y DE NUESTROS PADRES:'"
+            [brideParents]="data.parents?.brideParents || []" [groomParents]="data.parents?.groomParents || []"
+            [flowerLeftUrl]="'assets/img/flowers-left.png'" [flowerRightUrl]="'assets/img/flower-right.png'">
+        </app-couple-panel>
+
+        <app-floral-separator appRevealOnScroll></app-floral-separator>
+
+        <app-save-the-date-calendar appRevealOnScroll targetISO="2026-04-30T00:00:00-05:00">
+        </app-save-the-date-calendar>
+
+        <app-countdown appRevealOnScroll [targetDateISO]="data.event.dateISO"></app-countdown>
+
+        <app-add-to-calendar appRevealOnScroll [title]="'Boda de ' + data.couple.groom + ' & ' + data.couple.bride"
+            [description]="'¡Te esperamos con mucho cariño!'" [location]="data.locations.ceremony?.address || ''"
+            [startISO]="data.event.dateISO" endISO="2026-04-30T14:00:00-05:00"></app-add-to-calendar>
+
+        <app-event-details appRevealOnScroll [ceremony]="data.locations.ceremony" [party]="data.locations.party"
+            ceremonyTime="03:00 PM" partyTime="06:30 PM">
+        </app-event-details>
+
+        <app-floral-separator appRevealOnScroll></app-floral-separator>
+
+        <app-dress-code appRevealOnScroll [groomWhatsappNumber]="data.rsvp.groomWhatsappNumber"
+            [brideWhatsappNumber]="data.rsvp.brideWhatsappNumber" [messageTemplate]="data.rsvp.messageTemplate"
+            [note]="data.rsvp.note || ''" [flowerTopRightUrl]="'assets/img/flower.png'"
+            [flowerBottomLeftUrl]="'assets/img/flower-bottom-left.png'" dressValue="FORMAL"
+            giftTitle="Recepción de Regalos"
+            giftNote="El regalo es opcional, la asistencia es obligatoria. Si deseas tener un detalle con nosotros, puedes hacerlo llegar a:"
+            giftAddress="Calle Tres Marías N° 234 - Jaén"></app-dress-code>
+
+        <app-gallery appRevealOnScroll [images]="data.gallery.images"
+            [flowerTopLeftUrl]="'assets/img/flower-top-left.png'" [fadeHeight]="150">
+        </app-gallery>
+
+        <app-footer appRevealOnScroll></app-footer>
+    </main>
+</div>

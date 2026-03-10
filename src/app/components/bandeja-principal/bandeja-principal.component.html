@@ -1,0 +1,269 @@
+<div class="loading-screen" [class.closing]="isClosingLoading" *ngIf="isLoading" (click)="closeLoading()">
+    <div class="loading-content">
+        <div class="loading-title-wrapper">
+            <h1>Jayson <span>&</span> Eliana</h1>
+            <p class="loading-subtitle">Te invitan a celebrar su boda</p>
+        </div>
+        <div class="petalos-loading">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="loading-cta">
+            <button class="open-invitation" aria-label="Abrir invitación">
+                <span class="arrow-animate">↓</span>
+            </button>
+        </div>
+    </div>
+</div>
+<app-musica></app-musica>
+<!-- HERO -->
+<section class="hero hero-bg">
+    <!-- PETALOS -->
+    <div class="petalos">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <!-- Ondas suaves -->
+    <div class="ondas-hero">
+        <svg class="onda-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 C300,100 600,20 900,60 L1200,60 L1200,120 L0,120 Z" fill="#ffffff" opacity="0.1"></path>
+        </svg>
+    </div>
+    <div class="hero-content">
+        <p class="titulo-superior fade1">NUESTRA BODA</p>
+        <h1 class="nombres fade2">
+            Jayson <span>&</span> Eliana
+        </h1>
+        <div class="decorative-images" aria-hidden="true">
+            <img class="ring-photo" src="assets/img/anillos.png" alt="anillos">
+        </div>
+        <app-contador></app-contador>
+        <div class="bloque-especial fade3">
+            <!-- Versículo -->
+            <div class="versiculo-elegante">
+                <div class="icono-circulo">
+                    <mat-icon>menu_book</mat-icon>
+                </div>
+                <h3 class="cita">Eclesiastés 4:9-12</h3>
+                <p class="texto-versiculo">
+                    “Mejor son dos que uno… Y la cuerda triple no se rompe fácilmente.”
+                </p>
+                <div class="decor-versiculo">
+                    <mat-icon class="flor-vers">local_florist</mat-icon>
+                    <mat-icon class="corazon-vers">favorite</mat-icon>
+                    <mat-icon class="flor-vers">local_florist</mat-icon>
+                </div>
+            </div>
+            <!-- Lema -->
+            <div class="lema-elegante">
+                <div class="linea-dorada"></div>
+                <p>
+                    Con gratitud en nuestros corazones, celebramos el amor que Dios sembró en nuestras vidas,
+                    y hoy damos el paso más importante: unirnos para siempre bajo Su guía y bendición.
+                </p>
+                <div class="linea-dorada"></div>
+            </div>
+            <!-- Padres -->
+            <div class="padres-elegante">
+                <div class="decoracion-padres">
+                    <mat-icon class="flor-izq">local_florist</mat-icon>
+                    <mat-icon class="corazon-centro">favorite</mat-icon>
+                    <mat-icon class="flor-der">local_florist</mat-icon>
+                </div>
+                <p class="titulo-padres">
+                    Con la bendición y amor de nuestros queridos padres
+                </p>
+                <div class="tarjeta-padres">
+                    <div class="lado">
+                        <h4 style="color: #8b0000;">Padres del Novio</h4>
+                        <p><strong style="color: #b22222;">Americo Valdivia Tamay</strong></p>
+                        <p style="color: #dc143c;">Agustina Tamay Linares</p>
+                        <mat-icon class="corazon-pequeno">favorite</mat-icon>
+                    </div>
+                    <div class="separador">
+                        <!-- <mat-icon class="corazon-separador">favorite</mat-icon> -->
+                    </div>
+                    <div class="lado">
+                        <h4 style="color: #8b0000;">Padres de la Novia</h4>
+                        <p><strong style="color: #b22222;">Juan Aquino Pérez Díaz</strong></p>
+                        <p style="color: #dc143c;">Carmela Moreto Chuquillanque</p>
+                        <mat-icon class="corazon-pequeno">favorite</mat-icon>
+                    </div>
+                </div>
+                <div class="decoracion-padres-abajo">
+                    <mat-icon class="flor-abajo">local_florist</mat-icon>
+                    <mat-icon class="corazon-abajo">favorite</mat-icon>
+                    <mat-icon class="flor-abajo">local_florist</mat-icon>
+                </div>
+            </div>
+            <!-- Invitación -->
+            <p class="invitacion-elegante">
+                Nos sentimos honrados de invitarle a ser parte de este día tan especial
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FECHA -->
+<section class="fecha-section slide-in-up">
+    <div class="fecha-card">
+        <p class="nos-casamos">Nos Casamos</p>
+        <div class="anillos-casamiento">
+            <img src="assets/img/anillos.png" alt="anillo izquierdo" class="anillo-izq">
+            <img src="assets/img/anillos.png" alt="anillo derecho" class="anillo-der">
+        </div>
+        <div class="decoracion-linea"></div>
+        <div class="fecha-contenido">
+            <span class="dia">30</span>
+            <div class="mes-anio">
+                <p class="mes">ABRIL</p>
+                <p class="anio">2026</p>
+            </div>
+        </div>
+        <div class="decoracion-linea"></div>
+    </div>
+</section>
+<!-- CALENDARIO -->
+<section class="calendario-section fade-in">
+    <div class="calendario-card">
+        <h2 class="calendar-title">Guarde la Fecha</h2>
+
+        <div class="dias-semana">
+            <span>L</span>
+            <span>M</span>
+            <span>M</span>
+            <span>J</span>
+            <span>V</span>
+            <span>S</span>
+            <span>D</span>
+        </div>
+
+        <div class="grid-calendario">
+            <span class="empty"></span>
+            <span class="empty"></span>
+
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+
+            <span>20</span>
+            <span>21</span>
+            <span>22</span>
+            <span>23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span class="heart-day" title="¡Día de nuestra boda!">30</span>
+        </div>
+
+        <p class="mes-label">ABRIL · 2026</p>
+    </div>
+</section>
+<!-- EVENTOS -->
+<section class="eventos fade-in">
+    <!-- CONSEJO BIBLICO -->
+    <div class="card-evento elegante">
+        <h2 class="titulo-seccion">Celebremos Juntos</h2>
+        <div class="icono-evento">
+            <mat-icon>menu_book</mat-icon>
+        </div>
+        <h3>Consejo Bíblico</h3>
+        <p class="lugar">Salón del Reino de Los Testigos de Jehová</p>
+        <p class="direccion">Jaén - Calle Capitán Abelardo Quiñones 307</p>
+        <p class="hora">10:00 AM</p>
+        <iframe src="https://maps.google.com/maps?q=Calle+Capitán+Abelardo+Quiñones+307,+Jaén,+Peru&output=embed"
+            width="100%" height="300" style="border:0; margin-top: 20px; border-radius: 10px;"></iframe>
+        <a class="btn-mapa" href="https://maps.app.goo.gl/L2ZrRLQ9ei3x2PdL7" target="_blank">
+            <mat-icon>location_on</mat-icon>
+            Ver ubicación
+        </a>
+    </div>
+    <!-- GALERIA -->
+    <div class="galeria elegante">
+        <h2 class="titulo-galeria">Nuestros Momentos</h2>
+        <div class="grid-galeria">
+            <div class="img-box"><img src="assets/img/portada.png"></div>
+            <div class="img-box"><img src="assets/img/portada.png"></div>
+            <div class="img-box"><img src="assets/img/portada.png"></div>
+            <div class="img-box"><img src="assets/img/portada.png"></div>
+        </div>
+    </div>
+    <!-- RECEPCION -->
+    <div class="card-evento elegante">
+        <div class="icono-evento">
+            <mat-icon>celebration</mat-icon>
+        </div>
+        <h3>Recepción</h3>
+        <p class="lugar">Hotel Villa Delgado</p>
+        <p class="direccion">Calle Venecia, Jaén</p>
+        <p class="hora">1:00 PM</p>
+        <iframe src="https://maps.google.com/maps?q=Hotel+Villa+Delgado,+Jaén,+Peru&output=embed" width="100%"
+            height="300" style="border:0; margin-top: 20px; border-radius: 10px;"></iframe>
+        <a class="btn-mapa" href="https://www.google.com/maps/search/?api=1&query=Hotel+Villa+Delgado+Jaen+Peru"
+            target="_blank">
+            <mat-icon>location_on</mat-icon>
+            Ver ubicación
+        </a>
+    </div>
+</section>
+<!-- detalles -->
+<section class="detalles zoom-in">
+    <!-- VESTIMENTA -->
+    <div class="detalle-item slide-in-left bg-dress">
+        <div class="icono-detalle">
+            <mat-icon>checkroom</mat-icon>
+        </div>
+        <h3>Código de Vestimenta</h3>
+        <p class="detalle-principal">Formal</p>
+        <p class="detalle-secundario">Evitar color Blanco y Rojo</p>
+        <div class="linea-delgada"></div>
+        <div class="img-vestimenta" aria-hidden="true">
+            <img src="assets/img/vestimenta.png" alt="vestimenta">
+        </div>
+    </div>
+    <!-- REGALOS -->
+    <div class="detalle-item slide-in-right">
+        <div class="icono-detalle">
+            <mat-icon>card_giftcard</mat-icon>
+        </div>
+        <h3>Recepción de Regalos</h3>
+        <p class="detalle-principal">Ubicación por confirmar</p>
+        <div class="linea-delgada"></div>
+    </div>
+</section>
+<!-- confirmacion-->
+<section class="confirmacion-intuitiva bounce-in">
+    <h2>Acompáñanos</h2>
+    <p class="texto-confirmacion">
+        Nos alegrará contar con tu presencia en este día tan especial.
+    </p>
+    <div class="botones-confirmacion">
+        <button class="btn-confirmar" (click)="enviarConfirmacion()">
+            <mat-icon>favorite</mat-icon>
+            Confirmar asistencia
+        </button>
+    </div>
+</section>

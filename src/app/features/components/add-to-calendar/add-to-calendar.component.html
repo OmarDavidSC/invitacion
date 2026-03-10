@@ -1,0 +1,17 @@
+<section class="cal">
+    <div class="title">Agregar a mi calendario</div>
+
+    <div class="buttons">
+        <a class="btn outline" [href]="googleUrl" target="_blank" rel="noopener noreferrer">
+            GOOGLE
+        </a>
+
+        <a class="btn outline" [href]="outlookUrl" target="_blank" rel="noopener noreferrer">
+            OUTLOOK
+        </a>
+
+        <button class="btn outline" type="button" (click)="downloadICS()">
+            IPHONE / ICS
+        </button>
+    </div>
+</section>

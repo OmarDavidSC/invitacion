@@ -1,0 +1,59 @@
+<section class="panel">
+  <div class="flower-bg" *ngIf="flowerTopRightUrl">
+    <img [src]="flowerTopRightUrl" alt="" />
+  </div>
+  <div class="content">
+    <!-- CONFIRMACIÓN -->
+    <h2 class="script">Confirmación</h2>
+    <div class="phone">
+      <span class="material-symbols-outlined phone-icon">call</span>
+    </div>
+    <p class="text">{{ note }}</p>
+    <div class="btns">
+      <a class="btn outline" [href]="buildWhatsAppLink(groomWhatsappNumber)" target="_blank">
+        CONTACTO NOVIO
+      </a>
+      <a class="btn outline" *ngIf="brideWhatsappNumber" [href]="buildWhatsAppLink(brideWhatsappNumber)"
+        target="_blank">
+        CONTACTO NOVIA
+      </a>
+    </div>
+    <div class="soft-divider"></div>
+    <!-- VESTIMENTA -->
+    <h2 class="script vest">{{ dressTitle }}</h2>
+    <div class="dress-image">
+      <img [src]="dressImageUrl" alt="Código de vestimenta" />
+    </div>
+    <div class="dress-value">{{ dressValue }}</div>
+    <div class="restriction">
+      <div class="restriction-title">{{ restrictionTitle }}</div>
+      <div class="chips">
+        <span class="chip chip-pink">Rosado</span>
+        <span class="chip chip-white">Blanco</span>
+      </div>
+      <div class="restriction-note">
+        Gracias por ayudarnos a mantener la armonía de colores en este día especial.
+      </div>
+    </div>
+    <div class="final">
+      ESPERAMOS CONTAR <br />
+      CON SU PRESENCIA
+    </div>
+    <div class="soft-divider large"></div>
+    <!-- RECEPCIÓN DE REGALOS -->
+    <section class="gift-section" *ngIf="showGiftSection">
+      <div class="gift-icon-wrap">
+        <mat-icon class="gift-icon">redeem</mat-icon>
+      </div>
+      <h2 class="script gift-script">{{ giftTitle }}</h2>
+      <p class="gift-text">
+        {{ giftNote }}
+      </p>
+      <div class="gift-address">
+        {{ giftAddress }}
+      </div>
+    </section>
+
+    <img class="flower-bottom" *ngIf="flowerBottomLeftUrl" [src]="flowerBottomLeftUrl" alt="" />
+  </div>
+</section>

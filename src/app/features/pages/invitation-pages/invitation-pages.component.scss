@@ -1,0 +1,68 @@
+:host {
+    display: block;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 22px 14px;
+    display: flex;
+    justify-content: center;
+
+    background: radial-gradient(circle at 30% 0%, #f6ecec, transparent 55%),
+        radial-gradient(circle at 80% 10%, #f1d9da, transparent 55%),
+        linear-gradient(135deg, #ead6d6 0%, #fbf8f8 55%, #ead6d6 100%);
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+    border-radius: 26px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 18px 50px rgba(120, 50, 50, 0.16),
+        0 6px 20px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.blessing {
+    margin: 14px 18px 0;
+    padding: 14px 14px;
+    border-radius: 18px;
+    background: transparent;
+    text-align: center;
+}
+
+.blessing .text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.blessing .names {
+    display: grid;
+    gap: 6px;
+    justify-items: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 58px;
+    line-height: 0.95;
+}
+
+.blessing .invite {
+    margin-top: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.blessing .amp {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    opacity: 0.8;
+    margin: 2px 0;
+}

@@ -1,0 +1,183 @@
+// ==========================================
+// VARIABLES DE DISEÑO - COLORES Y ESTILOS
+// ==========================================
+// Este archivo contiene todas las variables de diseño
+// que se usan en el proyecto. Modifica estos valores
+// para cambiar el tema de la aplicación.
+
+// ==========================================
+// COLORES PRINCIPALES
+// ==========================================
+
+// Colores de Lujo
+$accent-gold: #d4af37;              // Dorado principal (Logo, highlights)
+$accent-gold-light: #e8c547;        // Dorado claro (Gradientes, hover)
+$accent-gold-dark: #c19a1b;         // Dorado oscuro (Borders)
+
+// Colores de Fondo
+$primary-dark: #0a0a0a;             // Negro oscuro (Fondo principal)
+$secondary-dark: #1a1a1a;           // Gris oscuro (Fondos secundarios)
+$tertiary-dark: #2a2a2a;            // Gris más claro
+
+// Colores de Texto
+$text-light: #ffffff;               // Blanco (Texto principal)
+$text-secondary: #f0f0f0;          // Blanco roto
+$text-muted: rgba(255, 255, 255, 0.7);    // Gris claro (Subtítulos)
+$text-faded: rgba(255, 255, 255, 0.5);    // Muy tenue
+
+// Colores de Bordes
+$border-color: rgba(255, 255, 255, 0.08);     // Muy sutil
+$border-accent: rgba(212, 175, 55, 0.3);      // Dorado tenue
+$border-accent-light: rgba(212, 175, 55, 0.5); // Dorado visible
+
+// Colores Especiales
+$whatsapp-color: #25d366;           // WhatsApp
+$error-color: #ff6b6b;              // Errores
+$success-color: #51cf66;            // Éxito
+$warning-color: #ffd369;            // Advertencias
+
+// ==========================================
+// TIPOGRAFÍA
+// ==========================================
+
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-size-xs: 11px;
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 32px;
+$font-size-4xl: 48px;
+
+$font-weight-normal: 500;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+$font-weight-black: 900;
+
+// ==========================================
+// ESPACIADO
+// ==========================================
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-2xl: 24px;
+$spacing-3xl: 32px;
+$spacing-4xl: 40px;
+$spacing-5xl: 60px;
+$spacing-6xl: 80px;
+
+$padding-small: 8px 12px;
+$padding-medium: 12px 16px;
+$padding-large: 16px 24px;
+$padding-xlarge: 24px 32px;
+
+// ==========================================
+// BORDER RADIUS
+// ==========================================
+
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 12px;
+$radius-2xl: 16px;
+$radius-full: 50%;
+
+// ==========================================
+// SOMBRAS
+// ==========================================
+
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+$shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.25);
+$shadow-2xl: 0 20px 50px rgba(0, 0, 0, 0.3);
+
+$shadow-gold-sm: 0 4px 12px rgba(212, 175, 55, 0.15);
+$shadow-gold-md: 0 8px 24px rgba(212, 175, 55, 0.25);
+$shadow-gold-lg: 0 15px 40px rgba(212, 175, 55, 0.3);
+
+$shadow-whatsapp: 0 8px 24px rgba(37, 211, 102, 0.4);
+$shadow-whatsapp-hover: 0 12px 32px rgba(37, 211, 102, 0.6);
+
+// ==========================================
+// TRANSICIONES
+// ==========================================
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+$transition-slower: 0.8s ease;
+
+$ease-in: cubic-bezier(0.4, 0, 1, 1);
+$ease-out: cubic-bezier(0, 0, 0.2, 1);
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+// ==========================================
+// BREAKPOINTS
+// ==========================================
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Media queries
+$media-xs: "(max-width: #{$breakpoint-sm - 1})";
+$media-sm: "(max-width: #{$breakpoint-md - 1})";
+$media-md: "(max-width: #{$breakpoint-lg - 1})";
+$media-lg: "(max-width: #{$breakpoint-xl - 1})";
+$media-xl: "(max-width: #{$breakpoint-2xl - 1})";
+
+// ==========================================
+// LAYOUT
+// ==========================================
+
+$container-max-width: 1280px;
+$container-padding: 16px;
+$grid-gap: 24px;
+
+// ==========================================
+// Z-INDEX
+// ==========================================
+
+$z-dropdown: 10;
+$z-sticky: 20;
+$z-fixed: 30;
+$z-modal-backdrop: 40;
+$z-modal: 50;
+$z-popover: 60;
+$z-tooltip: 70;
+$z-notification: 80;
+$z-whatsapp: 100;
+
+// ==========================================
+// GRADIENTES
+// ==========================================
+
+$gradient-gold: linear-gradient(135deg, $accent-gold, $accent-gold-light);
+$gradient-dark: linear-gradient(180deg, $primary-dark 0%, $secondary-dark 100%);
+$gradient-overlay: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.02));
+$gradient-text-gold: linear-gradient(135deg, $accent-gold, $accent-gold-light);
+
+// ==========================================
+// MEZCLAS Y FUNCIONES
+// ==========================================
+
+@function rgba-gold($alpha) {
+  @return rgba(212, 175, 55, $alpha);
+}
+
+@function rgba-white($alpha) {
+  @return rgba(255, 255, 255, $alpha);
+}
+
+@function rgba-dark($alpha) {
+  @return rgba(10, 10, 10, $alpha);
+}

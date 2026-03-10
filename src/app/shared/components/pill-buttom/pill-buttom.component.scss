@@ -1,0 +1,38 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 999px;
+
+    text-decoration: none;
+    color: #ffffff;
+    background: #b26b73;
+
+    box-shadow: 0 12px 26px rgba(178, 107, 115, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    transition: transform 140ms ease, filter 140ms ease;
+}
+
+.btn:active {
+    transform: scale(0.99);
+    filter: brightness(0.98);
+}
+
+.label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.22);
+}

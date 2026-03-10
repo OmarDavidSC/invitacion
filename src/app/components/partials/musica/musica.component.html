@@ -1,0 +1,12 @@
+<div class="music-wrapper">
+
+    <audio #audio loop>
+        <source src="assets/music/bodaa.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" (click)="toggleMusic()">
+        <span *ngIf="!isPlaying">♪</span>
+        <span *ngIf="isPlaying" class="rotate">♫</span>
+    </button>
+
+</div>

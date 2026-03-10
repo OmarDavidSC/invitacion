@@ -1,0 +1,26 @@
+.rq {
+    position: relative;
+    padding: 26px 18px 14px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    width: 140px;
+    height: auto;
+    opacity: 0.95;
+    pointer-events: none;
+    user-select: none;
+}
+
+.text {
+    margin: 0 auto;
+    max-width: 320px;
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    line-height: 1.05;
+    color: #2f2a2a;
+}

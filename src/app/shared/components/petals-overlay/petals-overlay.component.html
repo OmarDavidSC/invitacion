@@ -1,0 +1,5 @@
+<div class="petals" *ngIf="enabled">
+    <span class="petal" *ngFor="let _ of [].constructor(count); let i = index"
+        [style.backgroundImage]="'url(' + petalUrl + ')'" [style.opacity]="opacity" [style.left.%]="(i * (100 / count))"
+        [style.animationDelay.s]="(i * 0.7)" [style.animationDuration.s]="(9 + (i % 4) * 2)"></span>
+</div>

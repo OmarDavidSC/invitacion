@@ -1,0 +1,115 @@
+.itinerary {
+    position: relative;
+    padding: 26px 18px 64px;
+    text-align: center;
+}
+
+.title {
+    font-family: "Great Vibes", cursive;
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0 0 18px;
+    color: #2f2a2a;
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 26px 1fr;
+    gap: 6px;
+    align-items: start;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.col {
+    display: grid;
+    gap: 18px;
+    padding-top: 6px;
+}
+
+.slot {
+    min-height: 92px;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+}
+
+.left .name,
+.left .time {
+    justify-self: end;
+    text-align: right;
+    width: 100%;
+}
+
+.right .name,
+.right .time {
+    justify-self: start;
+    text-align: left;
+    width: 100%;
+}
+
+.name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.time {
+    margin-top: 3px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    opacity: 0.85;
+}
+
+.icon {
+    margin-top: 10px;
+    font-size: 34px;
+    height: 34px;
+    width: 34px;
+    color: #b26b73;
+}
+
+.center {
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+
+.line {
+    width: 2px;
+    height: 100%;
+    min-height: 420px;
+    background: #b26b73;
+    opacity: 0.9;
+    border-radius: 99px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #b26b73;
+}
+
+.dot.top {
+    margin-bottom: 6px;
+}
+
+.dot.bottom {
+    margin-top: 6px;
+}
+
+.flower {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 140px;
+    height: auto;
+    pointer-events: none;
+    opacity: 0.95;
+}

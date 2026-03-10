@@ -1,0 +1,17 @@
+<section class="hero">
+    <img class="corner-flower" [src]="cornerFlowerUrl" alt="" />
+    <p class="quote">{{ quote }}</p>
+    <div class="monogram-block">
+        <div class="oval">
+            <span class="letters">{{ monogram }}</span>
+        </div>
+        <div class="sprig" aria-hidden="true"></div>
+    </div>
+    <div class="tag">NUESTRA BODA</div>
+    <br>
+    <div class="photo-wrap">
+        <div class="photo" [style.backgroundImage]="'url(' + coverImageUrl + ')'"></div>
+        <div class="fade-bottom"></div>
+        <div class="fade-top"></div>
+    </div>
+</section>

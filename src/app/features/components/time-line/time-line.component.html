@@ -1,0 +1,28 @@
+<section class="itinerary">
+    <h2 class="title">Itinerario de actividades</h2>
+    <div class="grid">
+        <div class="col left">
+            <ng-container *ngFor="let item of items; let i = index">
+                <div class="slot" *ngIf="i % 2 === 0">
+                    <div class="name">{{ item.title }}</div>
+                    <div class="time">{{ item.time }}</div>
+                    <mat-icon class="icon">{{ matIconFor(item.icon) }}</mat-icon>
+                </div>
+            </ng-container>
+        </div>
+        <div class="center">
+            <div class="dot top"></div>
+            <div class="line"></div>
+            <div class="dot bottom"></div>
+        </div>
+        <div class="col right">
+            <ng-container *ngFor="let item of items; let i = index">
+                <div class="slot" *ngIf="i % 2 !== 0">
+                    <mat-icon class="icon">{{ matIconFor(item.icon) }}</mat-icon>
+                    <div class="name">{{ item.title }}</div>
+                    <div class="time">{{ item.time }}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

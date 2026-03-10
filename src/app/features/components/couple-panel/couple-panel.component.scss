@@ -1,0 +1,535 @@
+.panel {
+  padding: 0;
+  margin: 0;
+}
+
+.paper {
+  position: relative;
+  overflow: visible;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  width: 100%;
+  padding: 26px 16px 26px;
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* FLORES SUPERIORES EN ESQUINAS */
+.flower-top-left,
+.flower-top-right {
+  position: absolute;
+  top: -50px;
+  width: 180px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.95;
+  z-index: 1;
+}
+
+.flower-top-left {
+  left: 0;
+}
+
+.flower-top-right {
+  right: 0;
+}
+
+/* FLOR INFERIOR MÁS ABAJO */
+.floral-bottom-left {
+  position: absolute;
+  bottom: -70px;
+  left: -35px;
+  width: 165px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.95;
+  z-index: 1;
+}
+
+/* QUITAR FONDO DE PUNTOS: desactivamos confetti */
+.gold-confetti {
+  display: none;
+}
+
+.panel:not(.confetti) .gold-confetti {
+  display: none;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(120px, 0.9fr);
+  gap: 10px;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.left {
+  text-align: left;
+  padding-left: 4px;
+  min-width: 0;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NOVIOS CENTRADOS */
+.couple {
+  width: 300px;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.names {
+  position: relative;
+  z-index: 2;
+}
+
+.names .big {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(54px, 8vw, 78px);
+  line-height: 0.9;
+  color: #2f2a2a;
+  word-break: break-word;
+}
+
+.and {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(18px, 2.6vw, 26px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 6px 0 4px;
+  opacity: 0.9;
+}
+
+.rings {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.rings img {
+  width: 76px;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  display: block;
+}
+
+.blessing {
+  margin-top: 12px;
+  max-width: 340px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.86;
+}
+
+/* PADRES */
+.parents {
+  position: relative;
+  z-index: 2;
+  margin-top: 22px;
+  text-align: center;
+}
+
+.parents-intro {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.parents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.col {
+  min-width: 0;
+}
+
+.ptitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.pname {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.86;
+  line-height: 1.25;
+}
+
+.honor {
+  margin-top: 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  opacity: 0.85;
+  line-height: 1.35;
+}
+
+/* FECHA */
+.date-strip {
+  position: relative;
+  z-index: 2;
+  margin-top: 22px;
+  text-align: center;
+}
+
+.month {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.strip-row {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.strip-day {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #2f2a2a;
+  line-height: 1;
+}
+
+.strip-side {
+  display: grid;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.strip-line {
+  height: 2px;
+  background: rgba(46, 78, 60, 0.65);
+  border-radius: 99px;
+}
+
+.strip-cap {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.86;
+}
+
+.year {
+  margin-top: 6px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .paper {
+    padding: 22px 14px 24px;
+  }
+
+  .flower-top-left,
+  .flower-top-right {
+    width: 145px;
+  }
+
+  .header {
+    grid-template-columns: minmax(0, 1fr) 130px;
+    gap: 6px;
+    padding-top: 58px;
+  }
+
+  .couple {
+    width: 300px;
+  }
+
+  .rings {
+    padding-left: 38px;
+  }
+
+  .rings img {
+    width: 68px;
+  }
+
+  .blessing {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .parents-intro {
+    font-size: 16px;
+  }
+
+  .pname {
+    font-size: 13px;
+  }
+
+  .honor {
+    font-size: 15px;
+  }
+
+  .strip-day {
+    font-size: 48px;
+  }
+
+  .strip-cap {
+    font-size: 14px;
+  }
+
+  .year {
+    font-size: 14px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 480px) {
+  .paper {
+    padding: 20px 12px 22px;
+  }
+
+  .flower-top-left,
+  .flower-top-right {
+    width: 118px;
+  }
+
+  .flower-top-left {
+    left: -8px;
+  }
+
+  .flower-top-right {
+    right: -8px;
+  }
+
+  .floral-bottom-left {
+    width: 115px;
+    bottom: -55px;
+    left: -24px;
+  }
+
+  .header {
+    grid-template-columns: minmax(0, 1fr) 110px;
+    gap: 4px;
+    align-items: center;
+    padding-top: 48px;
+  }
+
+  .left {
+    padding-left: 0;
+  }
+
+  .right {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .couple {
+    width: 200px;
+  }
+
+  .names{
+    top: -55px;
+    left: 100px;
+  }
+
+  .names .big {
+    font-size: clamp(34px, 12vw, 58px);
+    line-height: 0.88;
+  }
+
+  .and {
+    font-size: 16px;
+    margin: 2px 0;
+    letter-spacing: 1px;
+  }
+
+  .rings {
+    display: flex;
+    justify-content: flex-center;
+    padding-right: 30px;
+    margin-top: 6px;
+  }
+
+  .rings img {
+    width: 72px;
+    right: 55px;
+  }
+
+  .blessing {
+    margin-top: 8px;
+    font-size: 10.5px;
+    line-height: 1.55;
+    max-width: 95%;
+  }
+
+  .parents {
+    margin-top: 16px;
+  }
+
+  .parents-intro {
+    font-size: 14px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+
+  .parents-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 6px;
+  }
+
+  .ptitle {
+    font-size: 8.5px;
+    letter-spacing: 1.3px;
+    margin-bottom: 4px;
+  }
+
+  .pname {
+    font-size: 10.5px;
+    line-height: 1.22;
+  }
+
+  .honor {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .date-strip {
+    margin-top: 16px;
+  }
+
+  .month {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+  }
+
+  .strip-row {
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .strip-side {
+    gap: 4px;
+  }
+
+  .strip-line {
+    height: 1.5px;
+  }
+
+  .strip-cap {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .strip-day {
+    font-size: 40px;
+  }
+
+  .year {
+    font-size: 11px;
+    margin-top: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* MÓVIL MUY PEQUEÑO */
+@media (max-width: 360px) {
+  .paper {
+    padding: 18px 10px 20px;
+  }
+
+  .flower-top-left,
+  .flower-top-right {
+    width: 100px;
+  }
+
+  .header {
+    grid-template-columns: minmax(0, 1fr) 92px;
+    padding-top: 42px;
+  }
+
+  .couple {
+    width: 200px;
+  }
+
+  .names .big {
+    font-size: clamp(30px, 11vw, 48px);
+  }
+
+  .and {
+    font-size: 14px;
+  }
+
+  .rings {
+    padding-left: 44px;
+  }
+
+  .rings img {
+    width: 72px;
+  }
+
+  .blessing {
+    font-size: 9.8px;
+  }
+
+  .parents-intro {
+    font-size: 12.5px;
+  }
+
+  .ptitle {
+    font-size: 8px;
+  }
+
+  .pname {
+    font-size: 9.5px;
+  }
+
+  .honor {
+    font-size: 11px;
+  }
+
+  .strip-cap {
+    font-size: 10px;
+  }
+
+  .strip-day {
+    font-size: 34px;
+  }
+
+  .year {
+    font-size: 10px;
+  }
+}

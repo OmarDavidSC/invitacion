@@ -1,0 +1,27 @@
+<section class="events">
+    <div class="block" *ngIf="ceremony">
+        <h3 class="script">Consejo Biblico</h3>
+
+        <div class="place">
+            <div class="place-name">{{ ceremony.name }}</div>
+            <div class="place-addr">{{ ceremony.address }}</div>
+        </div>
+        <div class="time">{{ ceremonyTime }}</div>
+        <a class="btn outline" [href]="ceremony.mapsUrl" [attr.target]="isExternal(ceremony.mapsUrl) ? '_blank' : null"
+            [attr.rel]="isExternal(ceremony.mapsUrl) ? 'noopener noreferrer' : null">
+            VER UBICACIÓN
+        </a>
+    </div>
+    <div class="block" *ngIf="party">
+        <h3 class="script">Recepción</h3>
+        <div class="place">
+            <div class="place-name">{{ party.name }}</div>
+            <div class="place-addr">{{ party.address }}</div>
+        </div>
+        <div class="time">{{ partyTime }}</div>
+        <a class="btn  outline" [href]="party.mapsUrl" [attr.target]="isExternal(party.mapsUrl) ? '_blank' : null"
+            [attr.rel]="isExternal(party.mapsUrl) ? 'noopener noreferrer' : null">
+            VER UBICACIÓN
+        </a>
+    </div>
+</section>

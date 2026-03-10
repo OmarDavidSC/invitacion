@@ -1,0 +1,18 @@
+<div class="overlay" [class.closing]="isClosing" (click)="onOpenClick()">
+    <div class="content" (click)="$event.stopPropagation()">
+        <div class="title">
+            <h1>{{ coupleTitle }}</h1>
+            <span>{{ subtitle }}</span>
+        </div>
+        <div class="petals">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <button class="open" type="button" (click)="onOpenClick()" aria-label="Abrir invitación">
+            <span class="arrow">↓</span>
+        </button>
+    </div>
+</div>

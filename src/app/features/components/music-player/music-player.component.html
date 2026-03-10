@@ -1,0 +1,35 @@
+<section class="player">
+    <div class="label">{{ label }}</div>
+    <div class="controls-row">
+        <button class="icon-btn soft" type="button" (click)="toggleFavorite()" aria-label="Favorito">
+            <span class="mini-icon" [class.active]="isFavorite">♡</span>
+        </button>
+        <button class="icon-btn" type="button" (click)="back10()" aria-label="Retroceder 10 segundos">
+            <span class="step">◀</span>
+            <!-- <span class="step-number">10</span> -->
+        </button>
+        <button class="play-btn" type="button" (click)="toggle()" aria-label="Play/Pause">
+            <span class="play-icon" *ngIf="!isPlaying">▶</span>
+            <span class="play-icon pause" *ngIf="isPlaying">❚❚</span>
+        </button>
+        <button class="icon-btn" type="button" (click)="forward10()" aria-label="Adelantar 10 segundos">
+            <!-- <span class="step-number">10</span> -->
+            <span class="step">▶</span>
+        </button>
+        <button class="icon-btn soft" type="button" aria-label="Más opciones">
+            <span class="mini-icon plus">⊕</span>
+        </button>
+    </div>
+    <div class="meta" *ngIf="title || duration">
+        <div class="title" *ngIf="title">{{ title }}</div>
+        <div class="bar" #barEl (click)="onSeekBarClick($event, barEl)">
+            <div class="track"></div>
+            <div class="fill" [style.width.%]="progressPct"></div>
+            <div class="dot" [style.left.%]="progressPct"></div>
+        </div>
+        <div class="time">
+            <span>{{ fmt(currentTime) }}</span>
+            <span>{{ fmt(duration) }}</span>
+        </div>
+    </div>
+</section>

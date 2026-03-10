@@ -1,0 +1,157 @@
+.player {
+    margin: 16px 18px 0;
+    padding: 14px 10px 10px;
+    text-align: center;
+}
+
+.label {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.controls-row {
+    margin-top: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn,
+.play-btn {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    cursor: pointer;
+
+    transition: transform .2s ease;
+}
+
+.play-btn {
+    background: #b97c85;
+    color: white;
+}
+
+.mini-icon {
+    font-size: 24px;
+    line-height: 1;
+    color: #b97c85;
+}
+
+.play-icon {
+    font-size: 20px;
+    transform: translateX(1px);
+}
+
+.play-icon.pause {
+    font-size: 18px;
+}
+
+.step {
+    font-size: 20px;
+    color: #b97c85;
+}
+
+.step-number {
+    position: absolute;
+    font-size: 9px;
+    font-weight: 700;
+    transform: translateY(1px);
+}
+
+.icon-btn:hover,
+.play-btn:hover {
+    transform: scale(1.08);
+}
+
+.meta {
+    margin-top: 16px;
+}
+
+.meta .title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #3a2f2f;
+    margin-bottom: 8px;
+}
+
+.bar {
+    position: relative;
+    height: 8px;
+    border-radius: 999px;
+    max-width: 340px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.track {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: rgba(124, 127, 105, 0.18);
+}
+
+.fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    border-radius: 999px;
+    background: rgba(124, 127, 105, 0.6);
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid rgba(124, 127, 105, 0.4);
+}
+
+.time {
+    max-width: 340px;
+    margin: 8px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    opacity: .7;
+}
+
+@media (max-width: 480px) {
+
+    .controls-row {
+        gap: 16px;
+    }
+
+    .icon-btn,
+    .play-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .mini-icon {
+        font-size: 22px;
+    }
+
+    .play-icon {
+        font-size: 18px;
+    }
+
+}

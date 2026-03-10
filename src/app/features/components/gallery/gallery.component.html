@@ -1,0 +1,21 @@
+<section class="gallery" *ngIf="images?.length">
+    <img class="flower flower-left" [src]="flowerTopLeftUrl" alt="" />
+
+    <div class="gallery-header">
+        <span class="gallery-subtitle">Nuestros recuerdos</span>
+        <h2 class="gallery-title">Nuestra Galería</h2>
+        <div class="gallery-line"></div>
+    </div>
+
+    <div class="gallery-list">
+        <div class="gallery-card" *ngFor="let src of images; let i = index">
+            <div class="gallery-card-inner">
+                <div class="gallery-number">0{{ i + 1 }}</div>
+                <img class="gallery-image" [src]="src" [alt]="'Foto de galería ' + (i + 1)" loading="lazy"
+                    decoding="async" />
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-thanks">Muchas gracias</div>
+</section>

@@ -1,0 +1,50 @@
+.petals {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.petal {
+    position: absolute;
+    top: -10%;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: fall, sway;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(120vh) rotate(260deg);
+    }
+}
+
+@keyframes sway {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 16px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .petals {
+        display: none;
+    }
+}

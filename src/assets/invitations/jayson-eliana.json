@@ -1,0 +1,91 @@
+{
+    "couple": {
+        "groom": "Jeyson",
+        "bride": "Eliana",
+        "displayNames": "Jeyson & Eliana",
+        "monogram": "E & J"
+    },
+    "event": {
+        "dateISO": "2026-04-30T15:00:00-05:00",
+        "city": "Ayacucho"
+    },
+    "hero": {
+        "quote": "Mejor son dos que uno... Y la cuerda triple no se rompe facilmente.",
+        "coverImageUrl": "assets/img/jayson-eliana/hover.jpg"
+    },
+    "music": {
+        "title": "Por Toda la Vida",
+        "audioUrl": "assets/music/boda.mp3"
+    },
+    "blessing": {
+        "playLabel": "DALE PLAY A NUESTRA CANCIÓN",
+        "text": "Jehová nos dio la gran bendición de llegar a conocernos y ahora nos da la oportunidad de estar juntos para siempre en una cuerda triple."
+    },
+    "parents": {
+        "intro": "Así que con la bendición de Jehová y de nuestros padres :",
+        "brideParents": [
+            "Américo Valdivia Rosales",
+            "Agustina Tamay Linares"
+        ],
+        "groomParents": [
+            "Juan Aquino Pérez Díaz",
+            "Carmela Moreto Chuquillanque"
+        ]
+    },
+    "locations": {
+        "ceremony": {
+            "name": "Salón del Reino de los Testigos de Jehová - Jaén  ",
+            "address": "Calle Capitan Abelardo Quiñones - N° 1700\nJaén",
+            "mapsUrl": "https://maps.app.goo.gl/L2ZrRLQ9ei3x2PdL7"
+        },
+        "party": {
+            "name": "Hotel Villa Delgado",
+            "address": "Calle Venecia\nJaén, Perú 06801\nRef. Frente al Montessori School",
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Villa+Delgado+Jaén+Peru"
+        }
+    },
+    "timeline": [
+        {
+            "title": "Ceremonia",
+            "time": "6:00 PM",
+            "icon": "ceremony"
+        },
+        {
+            "title": "Cocktail",
+            "time": "8:00 PM",
+            "icon": "cocktail"
+        },
+        {
+            "title": "Baile",
+            "time": "9:00 PM",
+            "icon": "dance"
+        },
+        {
+            "title": "Cena",
+            "time": "9:30 PM",
+            "icon": "dinner"
+        },
+        {
+            "title": "Fiesta",
+            "time": "10:00 PM",
+            "icon": "party"
+        }
+    ],
+    "rsvp": {
+        "groomWhatsappNumber": "51976339443",
+        "brideWhatsappNumber": "51928108245",
+        "messageTemplate": "Muchas gracias por la invitación a su boda. Será una alegría poder acompañarlos en un día tan importante. ¡Muchas felicidades!.",
+        "note": "Tu compañía es muy importante para nosotros en este día especial. Por favor confírmanos tu presencia con anticipación."
+    },
+    "dressCode": {
+        "title": "Formal",
+        "note": "Evitar vestir de blanco."
+    },
+    "gallery": {
+        "images": [
+            "assets/img/jayson-eliana/1.jpg",
+            "assets/img/jayson-eliana/2.jpg",
+            "assets/img/jayson-eliana/4.jpg"
+        ]
+    }
+}
