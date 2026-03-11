@@ -10,7 +10,7 @@ import { InvitationDataService } from 'src/app/shared/services/invitation-data.s
   templateUrl: './invitation-pages.component.html',
   styleUrls: ['./invitation-pages.component.scss']
 })
-export class InvitationPagesComponent implements OnInit, OnDestroy {
+export class InvitationPagesComponent implements OnInit {
 
   data?: InvitationData;
 
@@ -37,18 +37,5 @@ export class InvitationPagesComponent implements OnInit, OnDestroy {
         this.isLoading = false;
       }
     });
-  }
-
-  closeLoading() {
-    this.isCloseLoading = true;
-    window.setTimeout(() => {
-      this.isLoading = false;
-      this.isCloseLoading = false;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 450);
-  }
-
-  ngOnDestroy(): void {
-    this.sub?.unsubscribe();
   }
 }
