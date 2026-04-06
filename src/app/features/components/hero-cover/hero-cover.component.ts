@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeroCoverComponent {
 
   @Input() quote = '';
+  @Input() blurb = '';
   @Input() names = '';
   @Input() monogram = '';
   @Input() coverImageUrl = '';

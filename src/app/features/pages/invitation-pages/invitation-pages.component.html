@@ -1,6 +1,6 @@
 <div class="page" *ngIf="data">
     <main class="card">
-        <app-hero-cover [quote]="data.hero.quote"
+        <app-hero-cover [quote]="data.hero.quote" [blurb]="data.hero.blurb"
             [names]="data.couple.displayNames || (data.couple.groom + ' & ' + data.couple.bride)"
             [monogram]="data.couple.monogram || ''" [coverImageUrl]="data.hero.coverImageUrl">
         </app-hero-cover>
