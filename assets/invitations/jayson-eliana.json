@@ -10,7 +10,8 @@
         "city": "Ayacucho"
     },
     "hero": {
-        "quote": "Mejor son dos que uno... Y la cuerda triple no se rompe facilmente.",
+        "blurb": "Eclesiastés 4:9-12 ",
+        "quote": "Mejor son dos que uno… Y la cuerda triple no se rompe fácilmente.",
         "coverImageUrl": "assets/img/jayson-eliana/hover.jpg"
     },
     "music": {
@@ -36,7 +37,7 @@
         "ceremony": {
             "name": "Salón del Reino de los Testigos de Jehová - Jaén  ",
             "address": "Calle Capitan Abelardo Quiñones - N° 1700\nJaén",
-            "mapsUrl": "https://maps.app.goo.gl/L2ZrRLQ9ei3x2PdL7"
+            "mapsUrl": "https://maps.app.goo.gl/ts87C7ss9gkGoAUp9"
         },
         "party": {
             "name": "Hotel Villa Delgado",
