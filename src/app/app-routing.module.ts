@@ -5,10 +5,10 @@ import { InvitationPagesComponent } from './features/pages/invitation-pages/invi
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'invitation/jayson-eliana', pathMatch: 'full' },
+  { path: '', redirectTo: 'invitation/', pathMatch: 'full' },
   { path: 'invitation/:slug', component: InvitationPagesComponent },
   { path: 'demo', component: BandejaPrincipalComponent },
-  { path: '**', redirectTo: 'invitation/jayson-eliana' },
+  { path: '**', redirectTo: 'invitation/' },
 
 ];
 

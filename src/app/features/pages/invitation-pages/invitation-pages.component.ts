@@ -26,7 +26,7 @@ export class InvitationPagesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const slug = this.route.snapshot.paramMap.get('slug') || 'jayson-eliana';
+    const slug = this.route.snapshot.paramMap.get('slug') || '';
     this.sub = this.invitationDataService.getInvitation(slug).subscribe({
       next: (data) => {
         this.data = data;

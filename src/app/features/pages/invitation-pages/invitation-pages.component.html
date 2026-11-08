@@ -22,7 +22,7 @@
 
         <app-floral-separator></app-floral-separator>
 
-        <app-save-the-date-calendar targetISO="2026-04-30T00:00:00-05:00">
+        <app-save-the-date-calendar targetISO="2026-11-21T10:00:00-05:00">
         </app-save-the-date-calendar>
 
         <app-countdown [targetDateISO]="data.event.dateISO"></app-countdown>
@@ -31,8 +31,8 @@
             [description]="'¡Te esperamos con mucho cariño!'" [location]="data.locations.ceremony?.address || ''"
             [startISO]="data.event.dateISO" endISO="2026-04-30T14:00:00-05:00"></app-add-to-calendar>
 
-        <app-event-details [ceremony]="data.locations.ceremony" [party]="data.locations.party" ceremonyTime="03:00 PM"
-            partyTime="06:30 PM">
+        <app-event-details [ceremony]="data.locations.ceremony" [civil]="data.locations.civil" [party]="data.locations.party" ceremonyTime="05:00 PM"
+          civilTime="06:00 PM"  partyTime="07:00 PM">
         </app-event-details>
 
         <app-floral-separator></app-floral-separator>
@@ -43,7 +43,7 @@
             [flowerBottomLeftUrl]="'assets/img/flower-bottom-left.png'" dressValue="FORMAL"
             giftTitle="Recepción de Regalos"
             giftNote="El regalo es opcional, la asistencia es obligatoria. Si deseas tener un detalle con nosotros, puedes hacerlo llegar a:"
-            giftAddress="Calle Tres Marías N° 234 - Jaén"></app-dress-code>
+            giftAddress="Sta. Rosa 200, Pacora 14141"></app-dress-code>
 
         <app-gallery [images]="data.gallery.images" [flowerTopLeftUrl]="'assets/img/flower-top-left.png'"
             [fadeHeight]="150">

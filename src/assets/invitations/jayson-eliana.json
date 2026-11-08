@@ -1,13 +1,13 @@
 {
     "couple": {
-        "groom": "Jeyson",
-        "bride": "Eliana",
-        "displayNames": "Jeyson & Eliana",
-        "monogram": "E & J"
+        "groom": "Erick",
+        "bride": "Nayely",
+        "displayNames": "Erick & Nayely",
+        "monogram": "E & N"
     },
     "event": {
-        "dateISO": "2026-04-30T15:00:00-05:00",
-        "city": "Ayacucho"
+        "dateISO": "2026-11-21T10:00:00-05:00",
+        "city": "Pacora"
     },
     "hero": {
         "blurb": "Eclesiastés 4:9-12 ",
@@ -20,29 +20,34 @@
     },
     "blessing": {
         "playLabel": "DALE PLAY A NUESTRA CANCIÓN",
-        "text": "Jehová nos dio la gran bendición de llegar a conocernos y ahora nos da la oportunidad de estar juntos para siempre en una cuerda triple."
+        "text": "Dios permitió que nuestros caminos se encontraran y que nuestros corazones se unieran. Hoy, con su bendición, comenzamos una nueva etapa de amor, prometiendo caminar juntos para toda la vida."
     },
     "parents": {
-        "intro": "Así que con la bendición de Jehová y de nuestros padres :",
+        "intro": "Así que con la bendición de Dios y de nuestros padres :",
         "brideParents": [
-            "Américo Valdivia Rosales",
-            "Agustina Tamay Linares"
+            "José Serquen Vera",
+            "Alicia Coronado Chozo"
         ],
         "groomParents": [
-            "Juan Aquino Pérez Díaz",
-            "Carmela Moreto Chuquillanque"
+            "Maritza Beatriz Barba Rojas",
+            "José Ramos Llontop Valdera"
         ]
     },
     "locations": {
         "ceremony": {
-            "name": "Salón del Reino de los Testigos de Jehová - Jaén  ",
-            "address": "Calle Capitan Abelardo Quiñones - N° 1700\nJaén",
-            "mapsUrl": "https://maps.app.goo.gl/ts87C7ss9gkGoAUp9"
+            "name": "Iglesia de Pacora - Lambayeque  ",
+            "address": "Calle 28 de julio, frente al parque principal de Pacora, Lambayeque, Perú",
+            "mapsUrl": "https://maps.app.goo.gl/DR3NuzcoUozmLcsD7"
+        },
+        "civil": {
+            "name": "Municipalidad Distrital de Pacora - Lambayeque",
+            "address": "Calle 28 de julio, frente al parque principal de Pacora, Lambayeque, Perú",
+            "mapsUrl": "https://maps.app.goo.gl/7APu6xfwdXeWuVKG7"
         },
         "party": {
-            "name": "Hotel Villa Delgado",
-            "address": "Calle Venecia\nJaén, Perú 06801\nRef. Frente al Montessori School",
-            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Villa+Delgado+Jaén+Peru"
+            "name": "Restaurant campestre el rinconcito Pueblo Joven Mariategui - Pacora",
+            "address": "",
+            "mapsUrl": ""
         }
     },
     "timeline": [
@@ -73,8 +78,8 @@
         }
     ],
     "rsvp": {
-        "groomWhatsappNumber": "51976339443",
-        "brideWhatsappNumber": "51928108245",
+        "groomWhatsappNumber": "51901784007",
+        "brideWhatsappNumber": "51931585514",
         "messageTemplate": "Muchas gracias por la invitación a su boda. Será una alegría poder acompañarlos en un día tan importante. ¡Muchas felicidades!.",
         "note": "Tu compañía es muy importante para nosotros en este día especial. Por favor confírmanos tu presencia con anticipación."
     },

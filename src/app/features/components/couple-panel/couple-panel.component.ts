@@ -11,13 +11,13 @@ export class CouplePanelComponent {
   @Input() groomName = '';
 
   @Input() blessingText =
-    'Jehová nos dio la gran bendición de llegar a conocernos y ahora nos da la oportunidad de estar juntos para siempre en una cuerda triple.';
+    'Dios permitió que nuestros caminos se encontraran y que nuestros corazones se unieran. Hoy, con su bendición, comenzamos una nueva etapa de amor, prometiendo caminar juntos para toda la vida.';
 
-  @Input() parentsIntro = 'Así que con la bendición de Jehová y de nuestros padres';
+  @Input() parentsIntro = 'Así que con la bendición de Dios y de nuestros padres';
   @Input() brideParents: string[] = [];
   @Input() groomParents: string[] = [];
 
-  @Input() dateISO = '2026-04-30T10:00:00-05:00';
+  @Input() dateISO = '2026-11-21T10:00:00-05:00';
 
   @Input() coupleImageUrl = 'assets/img/couple-illustration.png';
   @Input() ringsImageUrl = 'assets/img/anillos.png';

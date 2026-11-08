@@ -17,7 +17,7 @@ export class DressCodeComponent {
   @Input() dressTitle = 'Vestimenta';
   @Input() dressValue = 'FORMAL';
 
-  @Input() restrictionTitle = 'Prohibido';
+  @Input() restrictionTitle = '';
   @Input() restrictedColors = 'Rosado y Blanco';
 
   @Input() flowerTopRightUrl = '';

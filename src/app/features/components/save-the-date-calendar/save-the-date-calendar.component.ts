@@ -12,17 +12,17 @@ type DayCell = {
 })
 export class SaveTheDateCalendarComponent implements OnInit {
 
-  @Input() targetISO = '2026-04-30T00:00:00-05:00';
+  @Input() targetISO = '2026-11-21T00:00:00-05:00';
 
   title = 'Guarde la fecha';
-  monthLabel = 'Abril';
+  monthLabel = 'Noviembre';
   yearLabel = '2026';
 
   weekdays = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
 
   cells: DayCell[] = [];
-  targetDay = 30;
-  monthIndex = 3;
+  targetDay = 21;
+  monthIndex = 11;
   year = 2026;
 
   ngOnInit(): void {

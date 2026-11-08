@@ -1,6 +1,6 @@
 <section class="events">
     <div class="block" *ngIf="ceremony">
-        <h3 class="script">Consejo Biblico</h3>
+        <h3 class="script">Matrimonio Religioso</h3>
 
         <div class="place">
             <div class="place-name">{{ ceremony.name }}</div>
@@ -12,6 +12,18 @@
             VER UBICACIÓN
         </a>
     </div>
+    <div class="block" *ngIf="civil">
+        <h3 class="script">Matrimonio Civil</h3>
+        <div class="place">
+            <div class="place-name">{{ civil.name }}</div>
+            <div class="place-addr">{{ civil.address }}</div>
+        </div>
+        <div class="time">{{ civilTime }}</div>
+        <a class="btn  outline" [href]="civil.mapsUrl" [attr.target]="isExternal(civil.mapsUrl) ? '_blank' : null"
+            [attr.rel]="isExternal(civil.mapsUrl) ? 'noopener noreferrer' : null">
+            VER UBICACIÓN
+        </a>
+    </div>
     <div class="block" *ngIf="party">
         <h3 class="script">Recepción</h3>
         <div class="place">
@@ -19,9 +31,9 @@
             <div class="place-addr">{{ party.address }}</div>
         </div>
         <div class="time">{{ partyTime }}</div>
-        <a class="btn  outline" [href]="party.mapsUrl" [attr.target]="isExternal(party.mapsUrl) ? '_blank' : null"
+        <!-- <a class="btn  outline" [href]="party.mapsUrl" [attr.target]="isExternal(party.mapsUrl) ? '_blank' : null"
             [attr.rel]="isExternal(party.mapsUrl) ? 'noopener noreferrer' : null">
             VER UBICACIÓN
-        </a>
+        </a> -->
     </div>
 </section>
